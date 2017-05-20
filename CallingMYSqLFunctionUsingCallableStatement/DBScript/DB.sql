@@ -1,0 +1,9 @@
+DELIMITER $$
+
+CREATE FUNCTION `jdbcdb`.`getAvg` (n1 INT,n2 INT)
+RETURNS INTEGER
+BEGIN
+DECLARE avgNum INTEGER;
+SET avgNum =(n1+n2)/2;
+RETURN avgNum;
+END
